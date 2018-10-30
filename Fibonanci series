@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(void)
+{
+	int no,counter=2, n1=0,n2=1,ans;
+	printf("Enter the number");
+	scanf("%d",&no);
+	printf("%5d",n1);
+	printf("%5d",n2);
+	while(counter<no)
+	{
+		ans=n1+n2;
+		counter++;
+		printf("%5d",ans);
+		n1=n2;
+		n2=ans;
+	}
+
+	return 0;
+}
